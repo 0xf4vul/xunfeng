@@ -1,1 +1,1 @@
-web: sh Run.sh
+web: su root && sh Run.sh
