@@ -1,1 +1,1 @@
-web: sh Run.sh
+web: sudo sh Run.sh
