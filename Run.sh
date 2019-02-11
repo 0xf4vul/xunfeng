@@ -2,11 +2,10 @@
 CURRENT_PATH=`dirname $0`
 cd $CURRENT_PATH
 
-XUNFENG_LOG=/var/log/xunfeng
-XUNFENG_DB=/var/lib/mongodb
+XUNFENG_LOG=/var
 
 [ ! -d $XUNFENG_LOG ] && mkdir -p ${XUNFENG_LOG}
-[ ! -d $XUNFENG_DB ] && mkdir -p ${XUNFENG_DB}
+
 
 nohup python ./Run.py > ${XUNFENG_LOG}/web.log &
 nohup python ./aider/Aider.py > ${XUNFENG_LOG}/aider.log &
